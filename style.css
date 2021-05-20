@@ -4,10 +4,22 @@
     box-sizing: border-box;
 }
 .heading{
-    background-color:green;
+    background-color:crimson;
     padding:20px;
     margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    color:wheat;
+    letter-spacing: 0.4rem;
 }
+.name{
+    font-size: 1.5rem;
+}
+.input{
+    padding:0.6rem 0;
+    margin-bottom: 2rem;
+}
+
 .main{
     margin-left: 20px;
 }
@@ -17,4 +29,33 @@ input {
 .table th , td{
     border:1px solid black;
     padding:10px;
+}
+.row{
+    display: flex;
+    width: 20%; 
+    margin:0px auto;
+    justify-content: space-between;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-left: 18rem;
+}
+.save{
+    cursor: pointer;
+    padding:0.6rem 1.5rem;
+    outline:none;
+    border:none;
+    background-color: black;
+    color:wheat;
+
+}
+.save:hover{
+    background-color:crimson;
+    color:wheat;
+
+}
+.data{
+    display: flex;
+    justify-content: center;
 }

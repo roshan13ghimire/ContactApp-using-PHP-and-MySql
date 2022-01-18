@@ -4,13 +4,13 @@
     $pass = "";
     $dbname = "contact";
 
-
     $con = mysqli_connect($host,$user,$pass,$dbname);
-    if($con){
-        // echo "Connected";
+    if($con)
+    {
+    // echo "Connected";
     }
-    else{
-        echo "Not Connected";
+    else
+    {
+    echo "Not Connected";
     }
-
 ?>

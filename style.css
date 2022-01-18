@@ -1,61 +1,110 @@
-.body{
-    margin:0px;
-    padding:0px;
+*{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
-.heading{
-    background-color:crimson;
-    padding:20px;
-    margin-bottom: 30px;
+.header{
+    font-size: 5vw;
+    letter-spacing: 2px;
+    background-color: crimson;
     text-align: center;
-    font-size: 1.5rem;
+    height: 25vh;
+    padding-top: 90px;
     color:wheat;
-    letter-spacing: 0.4rem;
-}
-.name{
-    font-size: 1.5rem;
-}
-.input{
-    padding:0.6rem 0;
-    margin-bottom: 2rem;
 }
 
-.main{
-    margin-left: 20px;
+.form{
+    width: 30%;
+    margin:40px auto;
+    position: relative;
 }
-input {
-    margin-bottom: 10px;
-}
-.table th , td{
-    border:1px solid black;
-    padding:10px;
-}
-.row{
+.flex{
     display: flex;
-    width: 20%; 
-    margin:0px auto;
     justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.flex input{
+    padding:10px;
+    width:60%;
+}
+.fs-25{
+    font-size: 20px;
+    margin-top:10px;
 }
 .button{
-    display: flex;
-    justify-content: center;
-    margin-left: 18rem;
-}
-.save{
+    padding:10px 30px;
     cursor: pointer;
-    padding:0.6rem 1.5rem;
+    position: absolute;
+    right:0;
     outline:none;
     border:none;
-    background-color: black;
-    color:wheat;
+    background-color: coral;
+    font-size: 20px;
 
 }
-.save:hover{
-    background-color:crimson;
-    color:wheat;
+.button:hover{
+    background-color: crimson;
+    outline:none;
+    border:none;
+}
+.all-contacts{
+    width: 20%;
+    margin:100px auto;
+    font-size: 20px;
+    
+}
+
+.table{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-collapse: collapse;
+}
+th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+td,th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+@media screen and (max-width:1262px){
+    .header{
+        height: 15vh;
+        padding-top:40px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .flex input{
+        width: 90%;
+        margin-top:10px;
+    }
+    .form{
+        position: relative;
+    }
+    .button{
+        position: absolute;
+        right:10%;
+    }
+    .all-contacts{
+        width: 30%;
+    }
 
 }
-.data{
-    display: flex;
-    justify-content: center;
+
+@media screen and (max-width:650px){
+    .header{
+        height: 5vh;
+        padding-top:10px;
+    }
+    .form{
+        width: 70%;
+    }
+    .all-contacts{
+        width: 70%;
+    }
 }

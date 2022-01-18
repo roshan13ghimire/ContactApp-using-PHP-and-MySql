@@ -8,3 +8,4 @@ CREATE TABLE names(
     PRIMARY KEY (id)
 
 );
+
